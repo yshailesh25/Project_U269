@@ -12,6 +12,15 @@ pipeline{
                 }
             }
         }
-        
+        stage('Deploy on Staging Environment'){
+            steps{
+                build job: 'Deploy artifact to staging env'
+            }
+            post {
+			   success{
+			       echo "build deplyed to staging env successfully"
+			    }
+		    }
+        }
     }
 }
