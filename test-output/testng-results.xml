@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8909" started-at="2020-11-21T15:04:04Z" finished-at="2020-11-21T15:04:13Z">
+  <suite name="Suite" duration-ms="9996" started-at="2020-11-21T15:36:11Z" finished-at="2020-11-21T15:36:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8909" started-at="2020-11-21T15:04:04Z" finished-at="2020-11-21T15:04:13Z">
+    <test name="Test" duration-ms="9996" started-at="2020-11-21T15:36:11Z" finished-at="2020-11-21T15:36:21Z">
       <class name="test.project.Validate_U269">
-        <test-method status="PASS" signature="sendName()[pri:0, instance:test.project.Validate_U269@5702b3b1]" name="sendName" duration-ms="362" started-at="2020-11-21T15:04:12Z" finished-at="2020-11-21T15:04:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sendName -->
-        <test-method status="PASS" signature="verifyName()[pri:1, instance:test.project.Validate_U269@5702b3b1]" name="verifyName" duration-ms="67" started-at="2020-11-21T15:04:13Z" finished-at="2020-11-21T15:04:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyName -->
-      </class> <!-- test.project.Validate_U269 -->
-      <class name="test.project.Open_close_browser">
-        <test-method status="PASS" signature="openbro()[pri:0, instance:test.project.Open_close_browser@25bbe1b6]" name="openbro" is-config="true" duration-ms="7777" started-at="2020-11-21T15:04:04Z" finished-at="2020-11-21T15:04:12Z">
+        <test-method status="PASS" signature="openbro()[pri:0, instance:test.project.Validate_U269@1ed4004b]" name="openbro" is-config="true" duration-ms="8613" started-at="2020-11-21T15:36:11Z" finished-at="2020-11-21T15:36:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openbro -->
-        <test-method status="PASS" signature="closebro()[pri:0, instance:test.project.Open_close_browser@25bbe1b6]" name="closebro" is-config="true" duration-ms="664" started-at="2020-11-21T15:04:13Z" finished-at="2020-11-21T15:04:13Z">
+        <test-method status="PASS" signature="sendName()[pri:0, instance:test.project.Validate_U269@1ed4004b]" name="sendName" duration-ms="513" started-at="2020-11-21T15:36:20Z" finished-at="2020-11-21T15:36:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendName -->
+        <test-method status="PASS" signature="verifyName()[pri:1, instance:test.project.Validate_U269@1ed4004b]" name="verifyName" duration-ms="64" started-at="2020-11-21T15:36:21Z" finished-at="2020-11-21T15:36:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyName -->
+        <test-method status="PASS" signature="closebro()[pri:0, instance:test.project.Validate_U269@1ed4004b]" name="closebro" is-config="true" duration-ms="742" started-at="2020-11-21T15:36:21Z" finished-at="2020-11-21T15:36:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebro -->
-      </class> <!-- test.project.Open_close_browser -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- test.project.Validate_U269 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
