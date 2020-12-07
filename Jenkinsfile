@@ -12,22 +12,10 @@ pipeline{
                 }
             }
         }
-        stage('Deploy on Staging Environment'){
-            steps{
-                build job: 'Deploy artifact to staging env'
-            }
-            post {
-			   success{
-			       echo "build deplyed to staging env successfully"
-			    }
-		    }
-        }
-        stage('Deploy to Production'){
-            steps{
-                timeout(time:5, unit:'DAYS'){
-                    input message:'Approve PRODUCTION Deployment?'
-                }
-                build job: 'Deploy on Production Environment'
+        stage('create docker image')
+        {
+            steps {
+                sh 'docker build . -t tomcatbasewebapp:${env.BUILD_ID}'
             }
         }
     }
