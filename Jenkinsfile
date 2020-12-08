@@ -15,7 +15,7 @@ pipeline{
         stage('create docker image')
         {
             steps {
-                sh "docker build . -t tomcatbasewebapp:${env.BUILD_ID}"
+                sh "docker build . -t tomcatbasewebapp:${env.BUILD_ID}" // if you use '' after sh you will error > @tmp/durable-a815ddd1/script.sh: 1: Bad substitution
             }
         }
     }
