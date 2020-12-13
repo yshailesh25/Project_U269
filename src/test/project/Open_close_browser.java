@@ -11,7 +11,7 @@ public class Open_close_browser {
 	@BeforeTest
 	public static void openbro()
 	{
-		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver");
 		driver=new ChromeDriver();
 		driver.navigate().to("http://localhost:9090/Project_U269/"); 
 		driver.manage().window().maximize();  
