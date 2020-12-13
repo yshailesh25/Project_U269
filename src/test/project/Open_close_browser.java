@@ -12,7 +12,10 @@ public class Open_close_browser {
 	public static void openbro()
 	{
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver");
-		driver=new ChromeDriver();
+		ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--no-sandbox");
+                driver = new ChromeDriver(chromeOptions);
 		driver.navigate().to("http://localhost:9090/Project_U269/"); 
 		driver.manage().window().maximize();  
 	}
