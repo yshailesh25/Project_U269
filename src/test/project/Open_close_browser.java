@@ -20,7 +20,7 @@ public class Open_close_browser {
                 chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("--no-sandbox");
                 driver = new ChromeDriver(chromeOptions);
-		driver.navigate().to("http://localhost:9090/Project_U269/"); 
+		driver.navigate().to("http://192.168.43.229:9090/Project_U269/"); 
 		driver.manage().window().maximize();  
 	}
 	
